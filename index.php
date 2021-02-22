@@ -150,13 +150,30 @@
 
 	$obtenerArregloCadena = explode("||", $cadena);
 	$obtenNumeros = explode(",", $obtenerArregloCadena[0]);
-	print_r($obtenNumeros);
+	//print_r($obtenNumeros);
 	//regresar esos numeros pero ahora en un string
 	$numerosString = implode("-", $obtenNumeros);
-	echo "<hr>";
-	echo $numerosString;
+	//echo "<hr>";
+	//echo $numerosString;
 	
+	//fecha con php
+	//echo date('Y-m-d');
+
+	//funciones con php
+
 	
+
+	function miFuncion($valor1, $valor2) {
+		$resultado = $valor1 + $valor2;
+		return $resultado;	
+	} 
+
+	$numero1 = 5;
+	$numero2 = 3;
+
+	$mifuncionResultado = miFuncion($numero1, $numero2);
+	echo $mifuncionResultado;
+
 	?>
 
 	
