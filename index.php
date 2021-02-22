@@ -90,17 +90,27 @@
 	//estrucutra de control repetitiva
 ?>
 
-<table border="1">
+<!--<table border="1">
 	<tr>
 		<th>Numeracion</th>
 	</tr>
 <?php  	
 
 	for ($i=0; $i < 100; $i++) { 
-		echo "<tr>
+		/*echo "<tr>
 				<td>" . $i . "</td>
-			  </tr>";
+			  </tr>";*/
 	}
 ?>
 
-</table>
+</table>-->
+
+<?php  
+	//estructura de control while
+	
+	$contador = 0;
+	while ($contador <= 10) {
+		#echo $contador ++;
+		#echo "<br>";
+	}
+?>
