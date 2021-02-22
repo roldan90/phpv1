@@ -48,10 +48,25 @@
 	$color = "rojo";
 
 	if ($color == "azul") {
-		echo "Es el color de Fer";
+		//echo "Es el color de Fer";
 	} else if ($color == "negro") {
-		echo "Es el color de omar";
+		//echo "Es el color de omar";
 	} else  if ($color == "rojo") {
-		echo "Es el color del amor";
+		//echo "Es el color del amor";
+	}
+
+	//operadores logicos
+
+	//and = AND o &&
+	//or = OR o ||
+	//not = !
+
+	$sexo = "M";
+	$altura = 1.60;
+
+	if ($sexo == 'M' OR $altura > 1.65) {
+		echo "Puede pelear en el ejercito";
+	} else {
+		echo "no puedes porque yo lo digo";
 	}
 ?>
