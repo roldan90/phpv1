@@ -108,9 +108,18 @@
 <?php  
 	//estructura de control while
 	
-	$contador = 0;
+	/*$contador = 0;
 	while ($contador <= 10) {
 		#echo $contador ++;
 		#echo "<br>";
-	}
+	}*/
+
+
+	//arreglos unidimencionales 
+
+	$arreglo1 = [1, [1 ,2], 3, 'Roldan'];
+	echo "<pre>";
+	print_r($arreglo1);
+	echo "</pre>";
 ?>
+
