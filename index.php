@@ -44,4 +44,14 @@
 	} else {
 		//echo "El if es falso";
 	}
+
+	$color = "rojo";
+
+	if ($color == "azul") {
+		echo "Es el color de Fer";
+	} else if ($color == "negro") {
+		echo "Es el color de omar";
+	} else  if ($color == "rojo") {
+		echo "Es el color del amor";
+	}
 ?>
