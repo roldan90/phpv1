@@ -65,8 +65,29 @@
 	$altura = 1.60;
 
 	if ($sexo == 'M' OR $altura > 1.65) {
-		echo "Puede pelear en el ejercito";
+		//echo "Puede pelear en el ejercito";
 	} else {
-		echo "no puedes porque yo lo digo";
+		//echo "no puedes porque yo lo digo";
 	}
+
+
+	//estructura de control switch
+
+	$numeroDeCaso = 1;
+	switch($numeroDeCaso) {
+		case 1:
+			//echo "Estas en el caso 1";
+			break;
+		case 2:
+			//echo "Estas en el caso 2";
+			break;
+		default:
+			//echo "No es ningun caso";
+			break;
+	}
+
+	
+
+	
+
 ?>
