@@ -117,9 +117,47 @@
 
 	//arreglos unidimencionales 
 
-	$arreglo1 = [1, [1 ,2], 3, 'Roldan'];
+	/*$arreglo1 = [1, [1 ,2], 3, 'Roldan'];
 	echo "<pre>";
 	print_r($arreglo1);
-	echo "</pre>";
-?>
+	echo "</pre>";*/
+
+	//arreglos asociativos
+	//no olvides que lleva parentesis
+
+	$fecha = "2021-02-22";
+	$valorn = "Roldan";
+	$apellido = "Aquino";
+	$arregloAsociativo = array ( 
+							"fecha" => $fecha,
+							"nombre" => "roldan",
+							"apelldo" => $apellido 
+						);
+	$arregloJson = json_encode($arregloAsociativo);
+	
+	//$arregloAsociativo['fecha'];
+
+	//pendiente
+	/*foreach ($arregloAsociativo as $key => $value) {
+		if ($key == 'fecha') {
+			echo $value;
+		}
+	}*/
+
+	//seprar la cadena por un caracter en particular
+
+	$cadena = "1,2,3||5,8,9";
+
+	$obtenerArregloCadena = explode("||", $cadena);
+	$obtenNumeros = explode(",", $obtenerArregloCadena[0]);
+	print_r($obtenNumeros);
+	//regresar esos numeros pero ahora en un string
+	$numerosString = implode("-", $obtenNumeros);
+	echo "<hr>";
+	echo $numerosString;
+	
+	
+	?>
+
+	
 
