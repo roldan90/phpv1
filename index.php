@@ -86,8 +86,21 @@
 			break;
 	}
 
-	
 
-	
-
+	//estrucutra de control repetitiva
 ?>
+
+<table border="1">
+	<tr>
+		<th>Numeracion</th>
+	</tr>
+<?php  	
+
+	for ($i=0; $i < 100; $i++) { 
+		echo "<tr>
+				<td>" . $i . "</td>
+			  </tr>";
+	}
+?>
+
+</table>
