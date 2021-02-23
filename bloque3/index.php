@@ -11,7 +11,7 @@
 			<button>Enviar</button>
 		</form>
 		<hr>
-		
+
 		<h3>Formulario con post</h3>
 		<form method="POST" action="recibePost.php">
 			<label>Valor 1</label>
@@ -19,6 +19,13 @@
 			<button>Enviar</button>
 		</form>
 
+		<hr>
+		<h3>Formulario con post y archivos</h3>
+		<form method="POST" action="recibeFiles.php" enctype='multipart/form-data'>
+			
+			<input type="file" name="miArchivo">
+			<button>Enviar</button>
+		</form>
 	</body>
 </html>
 
