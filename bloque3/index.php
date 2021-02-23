@@ -46,16 +46,17 @@
 					<h3 class="text-center">Calculadora basica</h3>
 					<form method="POST" action="calcular.php">
 						<label>Tipo de operacion</label>
-						<select name="tipoOperacion" class="form-control">
+						<select name="tipoOperacion" class="form-control" required="">
+							<option value="">Selecciona una opcion</option>
 							<option value="sumar">Sumar</option>
 							<option value="restar">Restar</option>
 							<option value="dividir">Dividir</option>
 							<option value="multiplicar">Multiplicar</option>
 						</select>
 						<label>Valor 1</label>
-						<input type="text" name="valor1" class="form-control">
+						<input type="text" name="valor1" class="form-control" required="">
 						<label>Valor 2</label>
-						<input type="text" name="valor2" class="form-control">
+						<input type="text" name="valor2" class="form-control" required="">
 						<br>
 						<button class="btn btn-primary">Calcular</button>
 					</form>
