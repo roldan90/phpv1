@@ -42,22 +42,24 @@
 			</div>
 			<hr>
 			<div class="row">
-				<h3>Calculadora basica</h3>
-				<form method="POST" action="calcular.php">
-					<label>Tipo de operacion</label>
-					<select name="tipoOperacion" class="form-control">
-						<option value="sumar">Sumar</option>
-						<option value="restar">Restar</option>
-						<option value="dividir">Dividir</option>
-						<option value="multiplicar">Multiplicar</option>
-					</select>
-					<label>Valor 1</label>
-					<input type="text" name="valor1" class="form-control">
-					<label>Valor 2</label>
-					<input type="text" name="valor2" class="form-control">
-					<br>
-					<button class="btn btn-primary">Calcular</button>
-				</form>
+				<div class="col-sm-4">
+					<h3 class="text-center">Calculadora basica</h3>
+					<form method="POST" action="calcular.php">
+						<label>Tipo de operacion</label>
+						<select name="tipoOperacion" class="form-control">
+							<option value="sumar">Sumar</option>
+							<option value="restar">Restar</option>
+							<option value="dividir">Dividir</option>
+							<option value="multiplicar">Multiplicar</option>
+						</select>
+						<label>Valor 1</label>
+						<input type="text" name="valor1" class="form-control">
+						<label>Valor 2</label>
+						<input type="text" name="valor2" class="form-control">
+						<br>
+						<button class="btn btn-primary">Calcular</button>
+					</form>
+				</div>
 			</div>
 		</div>
 	</body>
