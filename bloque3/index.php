@@ -4,7 +4,7 @@
 		<title></title>
 	</head>
 	<body>
-		<form method="GET" action="#">
+		<form method="GET" action="recibeDatos.php">
 			<label>Valor 1</label>
 			<input type="text" name="valor1">
 			<button>Enviar</button>
