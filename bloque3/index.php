@@ -54,9 +54,13 @@
 							<option value="multiplicar">Multiplicar</option>
 						</select>
 						<label>Valor 1</label>
-						<input type="text" name="valor1" class="form-control" required="">
+						<input 
+							type="number" 
+							name="valor1" 
+							class="form-control" 
+							required="">
 						<label>Valor 2</label>
-						<input type="text" name="valor2" class="form-control" required="">
+						<input type="number" name="valor2" class="form-control" required="">
 						<br>
 						<button class="btn btn-primary">Calcular</button>
 					</form>

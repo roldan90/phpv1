@@ -19,3 +19,6 @@
 			break;
 	}
  ?>
+
+<br>
+ <a href="index.php">Regresar al inicio :D</a>
