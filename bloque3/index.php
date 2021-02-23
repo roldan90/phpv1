@@ -17,23 +17,26 @@
 					<h3>Formulario con get</h3>
 					<form method="GET" action="recibeGet.php" >
 						<label>Valor 1</label>
-						<input type="text" name="valor1">
-						<button>Enviar</button>
+						<input type="text" name="valor1" class="form-control">
+						<br>
+						<button class="btn btn-primary">Enviar</button>
 					</form>
 				</div>
 				<div class="col-sm-4">
 					<h3>Formulario con post</h3>
 					<form method="POST" action="recibePost.php">
 						<label>Valor 1</label>
-						<input type="text" name="valor1">
-						<button>Enviar</button>
+						<input type="text" name="valor1" class="form-control">
+						<br>
+						<button class="btn btn-primary">Enviar</button>
 					</form>
 				</div>
 				<div class="col-sm-4">
 					<h3>Formulario con post y archivos</h3>
 					<form method="POST" action="recibeFiles.php" enctype='multipart/form-data'>
-						<input type="file" name="miArchivo">
-						<button>Enviar</button>
+						<input type="file" name="miArchivo" class="form-control">
+						<br>
+						<button class="btn btn-primary">Enviar</button>
 					</form>
 				</div>
 			</div>
