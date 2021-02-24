@@ -48,12 +48,18 @@
 			$arreglo = array(1,2);
 			return $arreglo;
 		}
+
+		public function sumaDosValores($valor1, $valor2) {
+			return $valor1 + $valor2;
+		}
 	}
 //******************************************************************
 	//como crear un objeto en php
 	$MiClase = new MiClase();
 	//como llamo al metodo en php
-	print_r($MiClase->llenadoDos());
-
+	//print_r($MiClase->llenadoDos());
+	echo $MiClase->sumaDosValores(5, 8);
+	echo "<hr>";
+	echo $MiClase->sumaDosValores(3, 10);
 	//funcionaes anonimas y promesas en relacion a php
  ?>
