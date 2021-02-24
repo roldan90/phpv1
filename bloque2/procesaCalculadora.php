@@ -21,8 +21,9 @@
 		}
 	}
 
-
 	//*********************************************
+
+
 
 	$opcion = $_POST['opcion'];
 	$valor1 = $_POST['valor1'];
@@ -31,4 +32,5 @@
 	$Calculadora = new Calculadora();
 
 	echo $Calculadora->operacionesBasicas($opcion, $valor1, $valor2);
+
  ?>
