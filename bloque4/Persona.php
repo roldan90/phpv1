@@ -9,6 +9,17 @@
 			$respuesta = mysqli_query($conectar, $sql);
 			return $respuesta;
 		}
+
+		public function agregarPersona($paterno, $materno, $nombre) {
+			$Conexion = new Conexion();
+			$conectar = $Conexion->conectar();
+
+			$sql = "INSERT INTO t_personas (paterno, materno, nombre) 
+					VALUES ('$paterno', '$materno', '$nombre')";
+			$respuesta = mysqli_query($conectar, $sql);
+
+			return $respuesta;
+		}
 	}
 
  ?>

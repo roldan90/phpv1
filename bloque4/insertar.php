@@ -7,4 +7,12 @@
 	$nombre = $_POST['nombre'];
 
 	$Persona = new Persona();
+
+	$respuesta = $Persona->agregarPersona($paterno, $materno, $nombre);
+
+	if ($respuesta) {
+		header("location:index.php");
+	} else {
+		echo $respuesta;
+	}
  ?>
