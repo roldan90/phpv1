@@ -14,20 +14,32 @@
  <html>
  <head>
  	<title>Actualizar persona</title>
+ 	<?php include "dependencias.php"; ?>
  </head>
  <body>
- 	<form method="POST" action="actualizar.php">
- 		<input type="text" hidden="" name="idPersona" value="<?php echo $id_persona; ?>"> 
- 		<label>Apellido paterno</label>
-		<input type="text" name="paterno" value="<?php echo $paterno; ?>">
-		<br>
-		<label>Apellido materno</label>
-		<input type="text" name="materno" value="<?php echo $materno; ?>">
-		<br>
-		<label>Nombre</label>
-		<input type="text" name="nombre" value="<?php echo $nombre; ?>">
-		<br>
-		<button>Actualizar</button>
- 	</form>
+ 	<div class="container">
+ 		<div class="row">
+ 			<div class="col-sm-4">
+ 				<h3>Actualizar persona</h3>
+ 				<form method="POST" action="actualizar.php">
+			 		<input type="text" hidden="" name="idPersona"   
+			 						value="<?php echo $id_persona; ?>"> 
+			 		<label>Apellido paterno</label>
+					<input type="text" name="paterno" class="form-control" 
+									value="<?php echo $paterno; ?>">
+					
+					<label>Apellido materno</label>
+					<input type="text" name="materno" class="form-control"  
+									value="<?php echo $materno; ?>">
+					
+					<label>Nombre</label>
+					<input type="text" name="nombre" class="form-control" 
+									value="<?php echo $nombre; ?>">
+					<br>
+					<button class="btn btn-warning">Actualizar</button>
+			 	</form>
+ 			</div>
+ 		</div>
+ 	</div>
  </body>
  </html>

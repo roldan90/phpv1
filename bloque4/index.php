@@ -46,7 +46,7 @@
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="table-responsive">
-					<table>
+					<table class="table table-hover" id="tablaCrud">
 						<thead>
 							<tr>
 								<th>id persona</th>
@@ -73,7 +73,7 @@
 												name="idPersonaActualizar" 
 												value="<?php echo $idPersona; ?>"
 												hidden>
-										<button>Actualizar</button>
+										<button class="btn btn-warning">Actualizar</button>
 									</form>
 								</td>
 								<td>
@@ -82,7 +82,7 @@
 												name="idPersonaEliminar" 
 												value="<?php echo $idPersona; ?>"
 												hidden>
-										<button>Eliminar</button>
+										<button class="btn btn-danger">Eliminar</button>
 									</form>
 								</td>
 							</tr>
@@ -96,5 +96,11 @@
 		</div>
 	</div>
 	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#tablaCrud').DataTable();
+		});
+	</script>
+
 </body>
 </html>
