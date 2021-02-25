@@ -39,7 +39,8 @@
 		</thead>
 		<tbody>
 		<?php
-			while($mostrar = mysqli_fetch_array($respuesta)) { 
+			while($mostrar = mysqli_fetch_array($respuesta)) {
+			$idPersona = $mostrar['id_persona']; 
 		?>
 			<tr>
 				<td><?php echo $mostrar['id_persona']; ?></td>
@@ -47,7 +48,15 @@
 				<td><?php echo $mostrar['materno']; ?></td>
 				<td><?php echo $mostrar['nombre']; ?></td>
 				<td></td>
-				<td></td>
+				<td>
+					<form method="POST" action="eliminar.php">
+						<input type="text" 
+								name="idPersonaEliminar" 
+								value="<?php echo $idPersona; ?>"
+								hidden>
+						<button>Eliminar</button>
+					</form>
+				</td>
 			</tr>
 		<?php
 			}  
