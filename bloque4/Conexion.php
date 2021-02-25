@@ -16,4 +16,14 @@
 		}
 	}
 
+
+	/*$Conexion = new Conexion();
+	$conectar = $Conexion->conectar();
+
+	if ($conectar) {
+		echo "conectado";
+	} else {
+		echo "no conectado";
+	}*/
+
  ?>
