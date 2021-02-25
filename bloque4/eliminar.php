@@ -1,4 +1,4 @@
 <?php 
 
-	echo $_POST['idPersonaEliminar'];
+	$idPersona = $_POST['idPersonaEliminar'];
  ?>
