@@ -40,8 +40,23 @@
 								"materno" => $datosObtenidos['materno'],
 								"nombre" => $datosObtenidos['nombre']
 									);
+			return $datosRespuesta;
 
 		}
+
+		public function actualizarPersona($idPersona, $paterno, $materno, $nombre) {
+			$Conexion = new Conexion();
+			$conectar = $Conexion->conectar();
+
+			$sql = "UPDATE t_personas SET paterno = '$paterno',
+										  materno = '$materno',
+										  nombre = '$nombre' 
+					WHERE id_persona = '$idPersona'";
+			$respuesta = mysqli_query($conectar, $sql);
+
+			return $respuesta;
+		}
+
 	}
 
  ?>
