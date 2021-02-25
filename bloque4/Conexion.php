@@ -7,7 +7,7 @@
 			$usuario = "root";
 			$password = "";
 			$baseDeDatos = "phpv1";
-
+			
 			$conexion = mysqli_connect($servidor,
 									    $usuario,
 										$password,
