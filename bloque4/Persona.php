@@ -20,6 +20,28 @@
 
 			return $respuesta;
 		}
+
+		public function obtenerDatosPersona($idPersona) {
+			$Conexion = new Conexion();
+			$conectar = $Conexion->conectar();
+
+			$sql = "SELECT id_persona, 
+						   paterno, 
+						   materno, 
+						   nombre 
+					FROM t_personas 
+					WHERE id_persona = '$idPersona'";
+			$respuesta = mysqli_query($conectar, $sql);
+			$datosObtenidos = mysqli_fetch_array($respuesta);
+
+			$datosRespuesta = array(
+								"id_persona" => $datosObtenidos['id_persona'],
+								"paterno" => $datosObtenidos['paterno'],
+								"materno" => $datosObtenidos['materno'],
+								"nombre" => $datosObtenidos['nombre']
+									);
+
+		}
 	}
 
  ?>

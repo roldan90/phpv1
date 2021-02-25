@@ -62,7 +62,15 @@
 				<td><?php echo $mostrar['paterno']; ?></td>
 				<td><?php echo $mostrar['materno']; ?></td>
 				<td><?php echo $mostrar['nombre']; ?></td>
-				<td></td>
+				<td>
+					<form method="POST" action="obtenerDatosActualizar.php">
+						<input type="text" 
+								name="idPersonaActualizar" 
+								value="<?php echo $idPersona; ?>"
+								hidden>
+						<button>Actualizar</button>
+					</form>
+				</td>
 				<td>
 					<form method="POST" action="eliminar.php">
 						<input type="text" 
