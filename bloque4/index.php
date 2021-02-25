@@ -23,6 +23,21 @@
 
 	?>
 
+	<form method="POST" action="insertar.php">
+		<label>Apellido paterno</label>
+		<input type="text" name="paterno">
+		<br>
+		<label>Apellido materno</label>
+		<input type="text" name="materno">
+		<br>
+		<label>Nombre</label>
+		<input type="text" name="nombre">
+		<br>
+		<button>Insertar</button>
+	</form>
+
+	<hr>
+
 	<table>
 		<caption>
 			Tabla de personas de el curso de desarrollo de aplicaciones con php
